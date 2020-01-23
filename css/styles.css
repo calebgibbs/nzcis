@@ -82,8 +82,10 @@
 
 	#breif{ 
 		position: initial; 
-		/*margin-top: -10px;*/
-	}  
+		/*margin-top: -10px;*/ 
+		/*text-decoration-style: */
+	}   
+
 
 	#about-us{
 		padding: 40px; 
