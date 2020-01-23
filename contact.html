@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arthur Gibbs Decorators</title> 
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/hamburger.css">
+	<link rel="stylesheet" href="css/bootstrap.css"> 
+	<link rel="stylesheet" href="css/swipebox.css"> 
+	<script src="https://use.fontawesome.com/228e8d7980.js"></script>
+
+</head>
+<body>
+
+	<div id="page">
+		
+		<nav>
+			<a href="index.html"><img src="img/logo.png" alt="logo"></a> 
+			<span class="mobile-menu">
+				<span id="mobile-icon" class="mobile"> 
+					<button id="menu-button" class="hamburger hamburger--slider " type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+			</span>
+			<ul id="menu-links">	
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="services.html">Services</a></li>
+				<li><a href="photos.html">Photos</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav> 
+
+		<div id="header"> 
+			<div id="service-head">
+				<h1>Contact</h1> 
+			</div>
+		</div> 
+
+		<div class="info">
+			<div class="col-lg-6 col-md-6 col-sm-12 c-info">
+				<p>Phone: 0800 721 683</p> 
+			</div> 
+			<div class="col-lg-6 col-md-6 col-sm-12 c-info">
+				<p>Email:  agibbs.decorators@clear.net.nz</p>
+			</div>
+		</div> 
+
+		
+
+		<div id="forms" class="row">
+					<div id="quote" class="col-lg-6 col-md-6 col-sm-12">
+						<h3>Enquire for a quote</h3> 
+						<form id="ajax-form" method="post">
+							<div class="form-body">
+								<div>
+									<input type="text" name="name" placeholder="Your Name" id="nameIn"> 
+									<span id="name-msg" class="error"></span>
+								</div> 
+								<div>
+									<input type="tel" name="phone" placeholder="Your Phone Number" id="phoneIn">
+									<span id="phone-msg" class="error"></span>
+								</div> 
+								<div>
+									<input type="email" name="email" placeholder="Your Email" id="emailIn">
+									<span id="email-msg" class="error"></span>
+								</div> 
+								<div>
+									<textarea rows="4" cols="50" placeholder="Describe the job you want done..." id="msgIn" name="message"></textarea>
+									<span id="message-msg" class="error"></span>
+								</div> 
+							</div>
+							<div>
+								<button id="send-btn"><span class="button-text">Send</span></button>
+							</div>
+						</form>
+					</div> 
+					<div id="estimate" class="col-lg-6 col-md-6 col-sm-12">
+						<h3>Get an online estimate</h3> 
+						<div id="calculator">
+							<div>
+								<div class="process paint-btn">
+									<label for="paint-select" id="paint-btn">Painting</label>
+								</div>
+								<div class="process sub-pro">
+									<input type="radio" name="process" value="interior" id="interior-select">
+									<label for="interior-select" class="sub">Interior</label>
+								</div>
+								<div class="process sub-pro">
+									<input type="radio" name="process" value="exterior" id="exterior-select">
+									<label for="exterior-select" class="sub">Exterior</label>
+								</div>
+								<div class="process wall-m">
+									<input type="radio" name="process" value="wallp" id="wallp-select">
+									<label for="wallp-select" id="wall-btn">Wallpapering</label>
+								</div> 
+							</div> 
+							<span id="process-msg" class="error"></span> 
+							<h4>Current Condition</h4>
+							<div id="conditions"> 
+								<div class="condition">
+									<input type="radio" name="condition" value="good" id="good-select">
+									<label for="good-select">Good</label>	
+								</div> 
+								<div class="condition con-size">
+									<input type="radio" name="condition" value="mod" id="mod-select">
+									<label for="mod-select">Moderate</label>
+								</div> 
+								<div class="condition con-m">
+									<input type="radio" name="condition" value="bad" id="bad-select">
+									<label for="bad-select">Bad</label>
+								</div>	
+							</div> 
+							<span id="condition-msg" class="error"></span>
+							<h4>Size</h4>
+							<div>
+								<input id="area-size" type="number" name="size" placeholder="Area size"> 
+								<span id="m2">M<sup>2</sup></span>
+							</div>
+							<span id="size-msg" class="error"></span> 
+							<div id="calc-check">
+								<input type="checkbox" name="checkbox" id="checkbox"><p id="disclaimer" class="disclaimer">I understand that this is an estimate only</p>
+							</div> 
+							<span id="form-msg" class="error"></span> 
+							<div>
+								<button id="calc-bttn">Calculate</button>
+							</div>
+						</div>
+					</div>	
+				</div> 
+
+		
+		
+		
+
+	</div>  
+	<footer>
+		<div class="footer-inner">
+			<div>
+				<ul>
+					<li><a href="index.php">Home</a></li> 
+					<li><a href="services.php">Services</a></li> 
+					<li><a href="photos.php">Photos</a></li> 
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+			</div> 
+			<div>
+				<ol>
+					<li class="circle-link"><a href="tel:+64800721683"><i class="fa fa-phone circle-icon" aria-hidden="true"></i></a></li> 
+					<li class="circle-link"><a href="mailto:agibbs.decorators@clear.net.nz"><i class="fa fa-envelope circle-icon" aria-hidden="true"></i></a></li>
+					<li class="circle-link"><a href="https://www.facebook.com/Arthur-Gibbs-Decorators-Ltd-147389555280282/" target="_blank"><i class="fa fa-facebook circle-icon" aria-hidden="true"></i></a></li>
+				</ol>
+			</div> 
+			<div class="copy">
+				<span>&copy; 2018 Artur Gibbs Decorators <span class="desktop tablet">Ltd, All rights reserved</span></span>
+			</div> 
+			<div class="copy">
+				<a href="https://www.iubenda.com/privacy-policy/19760351" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+	<script src="js/bootstrap.min.js"></script>  
+	<script type="text/javascript" src="js/animation.js"></script> 
+	<script type="text/javascript" src="js/mobile-menu.js"></script> 
+	<script src="js/jquery.swipebox.js"></script> 
+	<script type="text/javascript">
+		;( function($) {
+			$('.swipebox').swipebox();
+		} )( jQuery );
+	</script>  
+	<script type="text/javascript" src="js/slider.js"></script>  
+	<script type="text/javascript" src="js/calculator.js"></script> 
+	<script type="text/javascript" src="js/contactFormValidation.js"></script> 
+</body>
+</html>
